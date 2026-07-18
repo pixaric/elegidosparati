@@ -1,7 +1,16 @@
-// astro.config.mjs
+// @ts-check
 import { defineConfig } from 'astro/config';
 
+import tailwindcss from '@tailwindcss/vite';
+
+// https://astro.build/config
 export default defineConfig({
   site: 'https://pixaric.github.io',
-  base: '/elegidosparati', // Cambia esto por el nombre exacto de tu repo
+  base: '/elegidosparati',
+  vite: {
+    plugins: [tailwindcss()
+      
+    ]
+    
+  }
 });
