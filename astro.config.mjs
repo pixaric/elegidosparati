@@ -6,10 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://pixaric.github.io',
-  base: '/elegidosparati',
+  base: 'elegidosparati',
   vite: {
-    plugins: [tailwindcss()
-      
+    plugins: [tailwindcss()     
     ]
     
   }
